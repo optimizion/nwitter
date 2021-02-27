@@ -51,7 +51,6 @@ const Auth = () => {
       provider = new firebaseInstance.auth.GithubAuthProvider();
     }
     const { user, credential } = await authService.signInWithPopup(provider);
-    console.log(user, credential);
   };
 
   return (
